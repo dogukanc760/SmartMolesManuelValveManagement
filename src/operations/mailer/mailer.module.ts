@@ -16,8 +16,8 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
           port: 587,
           secure: false,
           auth: {
-            user: 'dodoyeni@outlook.com', //config.get('MAIL_USER'),
-            pass: 'kcinar22', //config.get('MAIL_PASSWORD'),
+            user: '', //config.get('MAIL_USER'),
+            pass: '', //config.get('MAIL_PASSWORD'),
           },
         },
         /* transport: {
@@ -32,7 +32,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
         },*/
 
         defaults: {
-          from: `"Smart Mole's" <dodoyeni@outlook.com>`,
+          from: `"Smart Mole's" <>`,
         },
         template: {
           headers: 'https://www.smartmoles.com/uploads/files/home/kostebek.png',
